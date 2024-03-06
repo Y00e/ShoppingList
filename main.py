@@ -31,4 +31,9 @@ class ShoppingList:
 
 ## ÖVNING: Skapa ett program där ni implementerar ett konsol gränssnitt för att lägga till varor, se innehåll, och ta bort en vara
 if __name__ == '__main__':
-  pass
+  shoppingList = ShoppingList()
+
+  shoppingList.add_item("Orange")
+  shoppingList.add_item("Lemon")
+
+  shoppingList.view_content()
