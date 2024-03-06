@@ -15,12 +15,18 @@ class ShoppingList:
   #En metod för att se listans innehåll
   # Om listan är tom, skriv ut "list is empty"
   def view_content(self):
-    pass
+    if not (self.items):
+      print("List is empty")
+      return False
 
   #Ta bort det första item:et som stämmer överens med parametern "item"
   # Om listan inte innehåller "item", skriv ut "item coult not be found"
   def delete_item(self, item):
-    pass
+    if not (self, item):
+      print(f"{item} could not be found")
+      return False
+
+    self.items.remove(item)
 
 
 ## ÖVNING: Skapa ett program där ni implementerar ett konsol gränssnitt för att lägga till varor, se innehåll, och ta bort en vara
