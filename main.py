@@ -25,7 +25,7 @@ class ShoppingList:
   # Ta bort det första item:et som stämmer överens med parametern "item"
   # Om listan inte innehåller "item", skriv ut "item coult not be found"
     def delete_item(self, item):
-      if not (self, item):
+      if not (item in self.items):
         print(f"{item} could not be found")
         return False
 
@@ -38,5 +38,8 @@ if __name__ == '__main__':
 
     shoppingList.add_item("Orange")
     shoppingList.add_item("Lemon")
+
+    shoppingList.view_content()
+    shoppingList.delete_item("Soda")
 
     shoppingList.view_content()
